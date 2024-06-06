@@ -97,9 +97,11 @@ p {
 
 @media (max-width: 500px) {
   body {
-    height: 280vh;
+    height: auto !important ;
   }
   .main {
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
   }
