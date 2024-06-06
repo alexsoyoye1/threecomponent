@@ -81,6 +81,7 @@ p {
   margin-top: 40px;
   width: 120px;
   background-color: var(--transparent-white);
+  border: 1px solid var(--transparent-white);
   padding: 10px;
   border-radius: 25px;
   text-decoration: none;
