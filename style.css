@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*===== PRIMARY====== */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /*====== NEUTRAL==== */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+}
+
+.main img {
+  width: 80px;
+}
+
+h2 {
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+p {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.sedan,
+.suv,
+.luxury {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 290px;
+  padding: 40px;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.sedan a {
+  color: var(--bright-orange);
+}
+.suv {
+  background-color: var(--dark-cyan);
+}
+.suv a {
+  color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.luxury a {
+  color: var(--very-dark-cyan);
+}
+.main a {
+  margin-top: 40px;
+  width: 120px;
+  background-color: var(--transparent-white);
+  padding: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.main a:hover {
+  border: 1px solid var(--transparent-white);
+  color: var(--transparent-white);
+  background-color: transparent;
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 280vh;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .sedan,
+  .suv,
+  .luxury {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 310px;
+    padding: 40px;
+  }
+  .main a {
+    margin-top: 0px;
+  }
+  .sedan {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
